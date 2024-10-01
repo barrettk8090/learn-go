@@ -66,7 +66,30 @@ func main() {
 	fmt.Println(ages, len(ages))
 
 	names := [4]string{"yoshi", "mario", "peach", "browser"}
+	names[1] = "luigi"
 	fmt.Println(names, len(names))
 
-	// slices
+	// slices (use arrays under the hood)
+
+	var scores = []int{100, 50, 60}
+	scores[2] = 25
+	scores = append(scores, 85)
+
+	fmt.Println(scores, len(scores))
+
+	// slice ranges
+	// from position one thru three, but not inclusive of 3
+	rangeOne := names[1:3]
+
+	// from position two onwards, inclusive of two
+	rangeTwo := names[2:]
+
+	//  from position 0, up to position 3, but not inclusive of 3
+	rangeThree := names[:3]
+
+	fmt.Println(rangeOne, rangeTwo, rangeThree)
+
+	rangeOne = append(rangeOne, "koopa")
+
+	fmt.Println(rangeOne)
 }
