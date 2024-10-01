@@ -40,4 +40,23 @@ func main() {
 	scoreThree := 1.5
 
 	fmt.Println(scoreOne, scoreTwo, scoreThree)
+
+	// Print
+	fmt.Print("hello, ")
+	fmt.Print("world! \n")
+	fmt.Print("New line \n")
+
+	// Printf (formatted strings) %_ = format specifier
+	// More info here: https://pkg.go.dev/fmt#hdr-Printing
+	name := "Barrett"
+	age := 30
+	fmt.Printf("my age is %v and my name is %v! \n", age, name)
+	fmt.Printf("age is of type %T \n", age)
+	fmt.Printf("name is of type %T \n", name)
+	fmt.Printf("you scored %f points!\n", 255.55)
+	fmt.Printf("you scored %0.1f points!\n", 255.55)
+
+	// Sprintf (save formatted strings)
+	var str = fmt.Sprintf("my age is %v and my name is %v! \n", age, name)
+	fmt.Println("The saved string is: ", str)
 }
