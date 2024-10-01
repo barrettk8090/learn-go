@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// // strings
 	// var nameOne string = "bob"
@@ -60,36 +58,36 @@ func main() {
 	// var str = fmt.Sprintf("my age is %v and my name is %v! \n", age, name)
 	// fmt.Println("The saved string is: ", str)
 
-	// arrays
-	// var ages [3]int = [3]int{20, 25, 30}
-	ages := [3]int{20, 25, 30}
-	fmt.Println(ages, len(ages))
+	// // arrays
+	// // var ages [3]int = [3]int{20, 25, 30}
+	// ages := [3]int{20, 25, 30}
+	// fmt.Println(ages, len(ages))
 
-	names := [4]string{"yoshi", "mario", "peach", "browser"}
-	names[1] = "luigi"
-	fmt.Println(names, len(names))
+	// names := [4]string{"yoshi", "mario", "peach", "browser"}
+	// names[1] = "luigi"
+	// fmt.Println(names, len(names))
 
-	// slices (use arrays under the hood)
+	// // slices (use arrays under the hood)
 
-	var scores = []int{100, 50, 60}
-	scores[2] = 25
-	scores = append(scores, 85)
+	// var scores = []int{100, 50, 60}
+	// scores[2] = 25
+	// scores = append(scores, 85)
 
-	fmt.Println(scores, len(scores))
+	// fmt.Println(scores, len(scores))
 
-	// slice ranges
-	// from position one thru three, but not inclusive of 3
-	rangeOne := names[1:3]
+	// // slice ranges
+	// // from position one thru three, but not inclusive of 3
+	// rangeOne := names[1:3]
 
-	// from position two onwards, inclusive of two
-	rangeTwo := names[2:]
+	// // from position two onwards, inclusive of two
+	// rangeTwo := names[2:]
 
-	//  from position 0, up to position 3, but not inclusive of 3
-	rangeThree := names[:3]
+	// //  from position 0, up to position 3, but not inclusive of 3
+	// rangeThree := names[:3]
 
-	fmt.Println(rangeOne, rangeTwo, rangeThree)
+	// fmt.Println(rangeOne, rangeTwo, rangeThree)
 
-	rangeOne = append(rangeOne, "koopa")
+	// rangeOne = append(rangeOne, "koopa")
 
-	fmt.Println(rangeOne)
+	// fmt.Println(rangeOne)
 }
